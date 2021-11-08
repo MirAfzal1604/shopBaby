@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e01e13ae9c.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>shop</title>
+</head>
+
+<body>
+
+    <div class="topremaining">
+        <p>Start selling your products or buy them from anywhere!</p>
+        <span class="remaining_icons" onclick="this.parentElement.style.display='none';"><i class="fas fa-times"></i></span>
+    </div>
+
+    <div class="bg_line">
+        <div class="container">
+            <div class="nav">
+                <div class="language">
+                    <button id="btnlanguage">USD</button>
+                    <div class="dropdown_content">
+                        <a href="#">RUS</a>
+                    </div>
+                </div>
+
+                <img src="./img/Logo.png" alt="logo_of_nav" />
+
+                <div class="cardBox">
+                    <p>Card(<span>0</span>)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg_line">
+        <div class="container">
+            <div class="nav_middle">
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <div class="category">
+                    <a href="#" class="category_li">HOME</a>
+                    <a href="#" class="category_li" id="btn_dropdown_li">MEN <span class="li_arrow"><i class="fas fa-sort-down"></i></span></a>
+                    <div class="dropdown_li">
+                        <a href="#">T-shirt</a>
+                        <a href="#">T-shirt</a>
+                        <a href="#">T-shirt</a>
+                    </div>
+                    <a href="#" class="category_li" id="btn_dropdown_li2">WOMEN<span class="li_arrow2"><i class="fas fa-sort-down"></i></span></a>
+                    <div class="dropdown_li2">
+                        <a href="#">T-shirt</a>
+                        <a href="#">T-shirt</a>
+                        <a href="#">T-shirt</a>
+                    </div>
+                    <a href="#" class="category_li">LOOKBOOK</a>
+                    <a href="#" class="category_li">ABOUT</a>
+                    <a href="#" class="category_li">BLOG</a>
+                </div>
+                <div class="send_wants">
+                    <i class="far fa-heart" id="heart">
+                        <div class="addheart"></div>
+                    </i>
+                    <i class="fas fa-search" id="search" onclick="openSearch()"></i>
+
+                    <div id="myOverlay">
+                        <span class="closebtn" onclick="closeSearch()"><i class="fas fa-times"></i></span>
+                        <div class="overlay-content">
+                            <form class="hidden_form">
+                                <input type="text" class="hidden_input" placeholder="Search.." name="search" required />
+                                <button type="submit" class="hidden_submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product">
+            <div class="product_photo">
+                <div class="meanPhoto">
+                    <img src="https://cdn.crockid.ru/crockid/catalog/thumbs/0_9e47e409-9745-11eb-abe0-00155d006c00.jpg">
+                </div>
+                <div class="meanPhoto">
+                    <img src="https://cdn.crockid.ru/crockid/catalog/thumbs/1_9e47e409-9745-11eb-abe0-00155d006c00.jpg">
+                </div>
+                <div class="meanPhoto">
+                    <img src="https://cdn.crockid.ru/crockid/catalog/thumbs/2_9e47e409-9745-11eb-abe0-00155d006c00.jpg">
+                </div>
+                <div class="meanPhoto">
+                    <img src="https://cdn.crockid.ru/crockid/catalog/thumbs/3_9e47e409-9745-11eb-abe0-00155d006c00.jpg">
+                </div>
+
+                <div class="underPhoto">
+                    <div class="under">
+                        <img class="demo" src="https://cdn.crockid.ru/crockid/catalog/thumbs/0_9e47e409-9745-11eb-abe0-00155d006c00.jpg" onclick="currentSlide(1)">
+                    </div>
+                    <div class="under">
+                        <img class="demo" src="https://cdn.crockid.ru/crockid/catalog/thumbs/1_9e47e409-9745-11eb-abe0-00155d006c00.jpg" onclick="currentSlide(2)">
+                    </div>
+                    <div class="under">
+                        <img class="demo" src="https://cdn.crockid.ru/crockid/catalog/thumbs/2_9e47e409-9745-11eb-abe0-00155d006c00.jpg" onclick="currentSlide(3)">
+                    </div>
+                    <div class="under">
+                        <img class="demo" src="https://cdn.crockid.ru/crockid/catalog/thumbs/3_9e47e409-9745-11eb-abe0-00155d006c00.jpg" onclick="currentSlide(4)">
+                    </div>
+                </div>
+            </div>
+
+            <div class="productText">
+                <p class="nameof_product">The Atelier Tailored Coat</p>
+
+                <div class="rate_container">
+                    <button class="star">
+                        <i class="fas fa-star"></i>
+                    </button>
+                    <button class="star">
+                        <i class="fas fa-star"></i>
+                    </button>
+                    <button class="star">
+                        <i class="fas fa-star"></i>
+                    </button>
+                    <button class="star">
+                        <i class="fas fa-star"></i>
+                    </button>
+                    <button class="star">
+                        <i class="far fa-star"></i>
+                    </button>
+
+                    <p class="rating">3 Review(s) | <span class="ratingSpan">ADD A REVIEW</span></p>
+                </div>
+
+                <p class="price">29.99$</p>
+
+                <div class="product_model">
+                    <p class="product_info">Availability : <span class="info_vue">VUE</span></p>
+                    <p class="product_info">Product Code : <span class="info_vue">VUE</span></p>
+                    <p class="product_info">Tags : <span class="info_vue">VUE</span></p>
+                </div>
+
+                <p class="about_product">Sleek, polished, and boasting an impeccably modern fit, this blue, 2-but- ton Lazio suit features a notch lapel, flap pockets, and accompanying flat front trousers—all in pure wool by Vitale Barberis Canonico.</p>
+
+                <ul>
+                    <li v-for="detail in details">
+                        {{detail}}
+                    </li>
+                </ul>
+
+                <div class="product_select">
+                    <div class="select">
+                        <p class="model_info">Color</p>
+                        <select class="product_input">
+                                <option>Yellow</option>
+                                <option>Red</option>
+                                <option>Green</option>
+                                <option>Black</option>
+                        </select>
+                    </div>
+                    <div class="select">
+                        <p class="model_info">Size</p>
+                        <select class="product_input">
+                                <option>S</option>
+                                <option>M</option>
+                                <option>L</option>
+                                <option>XL</option>
+                        </select>
+                    </div>
+                    <div class="select">
+                        <p class="model_info">QTY</p>
+                        <div class="box_inc">
+                            <div class="number"></div>
+                            <div class="inc">
+                                <button class="plus" id="plus">+</button>
+                                <button class="minuse" id="minuse">-</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="func">
+                    <button class="addCart">add to cart</button>
+                    <button class="addWish">💛 add to wishlist</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <p class="footer_text">Made with Love & Coffee © 2015 Design Lazy. All Rights Reserved.</p>
+    </div>
+
+
+
+    <!-- <script>
+        var app = new Vue({
+            el: '#app',
+            date: {
+                product: 'socks'
+            }
+        })
+
+        // var app = new Vue({
+        //     el: ".product",
+        //     date: {
+        //         details: ["Dark blue suit for a tone-on-tone look", "Regular fit", "100% Cotton", " Free shipping with 4 days delivery"]
+        //     }
+        // })
+    </script> -->
+
+    <script src=".//js/wishes.js"></script>
+    <script src=".//js/inc.js"></script>
+    <script src="./js/stars_rate.js"></script>
+    <script src="./js/img.js"></script>
+    <script src="./js/dropDownnav.js"></script>
+    <script src="./js/icons.js "></script>
+    <script src="./js/humburger.js "></script>
+    <script src="./js/language.js "></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js "></script>
+</body>
+
+</html>
