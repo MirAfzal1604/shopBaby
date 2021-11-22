@@ -221,7 +221,7 @@ body {
     display: none;
     position: absolute;
     top: 100%;
-    left: 10%;
+    left: 14%;
     background-color: #999;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     padding: 3px 0px;
@@ -254,7 +254,7 @@ body {
     display: none;
     position: absolute;
     top: 100%;
-    left: 27%;
+    left: 37%;
     background-color: #999;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     padding: 3px 0px;
@@ -702,7 +702,7 @@ body {
     display: none;
     position: fixed;
     top: 10%;
-    left: 40%;
+    left: 33%;
     padding: 50px;
     background: #555;
     border-radius: 10px;
@@ -781,7 +781,7 @@ body {
     }
     .dropdown_li {
         top: 100%;
-        left: 10%;
+        left: 14%;
         padding: 3px 0px;
     }
     .dropdown_li a {
@@ -789,7 +789,7 @@ body {
     }
     .dropdown_li2 {
         top: 100%;
-        left: 27%;
+        left: 36%;
         padding: 3px 0px;
     }
     .dropdown_li2 a {
@@ -1077,7 +1077,7 @@ body {
     }
     #CartAdd {
         top: 8%;
-        left: 25%;
+        left: 15%;
         padding: 30px;
     }
 }
@@ -1118,12 +1118,12 @@ body {
     }
     .dropdown_li {
         top: 35%;
-        left: 10%;
+        left: 20%;
         padding: 3px 0px;
     }
     .dropdown_li2 {
         top: 44%;
-        left: 70%;
+        left: 68%;
         padding: 3px 0px;
     }
     .arrow_anime2 {
@@ -1132,7 +1132,7 @@ body {
     }
     .li_arrow {
         top: 50%;
-        right: -63%;
+        right: -33%;
     }
     .li_arrow2 {
         top: 50%;
@@ -1233,7 +1233,7 @@ body {
     }
     #CartAdd {
         top: 8%;
-        left: 20%;
+        left: 10%;
         padding: 25px;
     }
     .close1 {
@@ -1254,9 +1254,16 @@ body {
         padding: 10px 0;
         font-size: 13px;
     }
+    .addCart,
+    .addWish {
+        width: 150px;
+        height: 100px;
+        margin: 0 20px 0 0;
+        font-size: 14px;
+    }
     #CartAdd {
         top: 8%;
-        left: 10%;
+        left: 3%;
         padding: 25px 10px;
     }
     .close1 {
@@ -1281,6 +1288,10 @@ body {
     }
     #btnlanguage {
         font-size: 13px;
+        width: 50px;
+    }
+    .dropdown_content {
+        width: 50px;
     }
     .dropdown_content a {
         font-size: 13px;
@@ -1400,13 +1411,6 @@ body {
     }
     .func {
         padding: 30px 0;
-    }
-    .addCart,
-    .addWish {
-        width: 150px;
-        height: 50px;
-        margin: 0 20px 0 0;
-        font-size: 14px;
     }
     .footer_text {
         padding: 10px 0;

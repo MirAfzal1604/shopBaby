@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/e01e13ae9c.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/styleRus.css">
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <title>shop</title>
 </head>
@@ -16,7 +16,7 @@
 
     <div id="app">
         <div class="topremaining">
-            <p>Start selling your products or buy them from anywhere!</p>
+            <p>Начните продавать свою продукцию или покупайте ее где угодно!</p>
             <span class="remaining_icons" onclick="this.parentElement.style.display='none';"><i class="fas fa-times"></i></span>
         </div>
 
@@ -24,16 +24,16 @@
             <div class="container">
                 <div class="nav">
                     <div class="language">
-                        <button id="btnlanguage">USD</button>
+                        <button id="btnlanguage">Ру</button>
                         <div class="dropdown_content">
-                            <a href="#">RUS</a>
+                            <a href="#">Анг</a>
                         </div>
                     </div>
 
                     <img src="./img/Logo.png" alt="logo_of_nav" />
 
                     <div class="cardBox">
-                        <p>Card(<span>{{ card }}</span>)</p>
+                        <p>Карта(<span>{{ card }}</span>)</p>
                     </div>
                 </div>
             </div>
@@ -48,22 +48,22 @@
                         <div class="line3"></div>
                     </div>
                     <div class="category">
-                        <a href="#" class="category_li">HOME</a>
-                        <a href="#" class="category_li" id="btn_dropdown_li">MEN <span class="li_arrow"><i class="fas fa-sort-down"></i></span></a>
+                        <a href="#" class="category_li">ДОМ</a>
+                        <a href="#" class="category_li" id="btn_dropdown_li">МУЖЧИНЫ <span class="li_arrow"><i class="fas fa-sort-down"></i></span></a>
                         <div class="dropdown_li">
                             <a href="#">T-shirt</a>
                             <a href="#">T-shirt</a>
                             <a href="#">T-shirt</a>
                         </div>
-                        <a href="#" class="category_li" id="btn_dropdown_li2">WOMEN<span class="li_arrow2"><i class="fas fa-sort-down"></i></span></a>
+                        <a href="#" class="category_li" id="btn_dropdown_li2">ЖЕНЩИНЫ<span class="li_arrow2"><i class="fas fa-sort-down"></i></span></a>
                         <div class="dropdown_li2">
                             <a href="#">T-shirt</a>
                             <a href="#">T-shirt</a>
                             <a href="#">T-shirt</a>
                         </div>
-                        <a href="#" class="category_li">LOOKBOOK</a>
-                        <a href="#" class="category_li">ABOUT</a>
-                        <a href="#" class="category_li">BLOG</a>
+                        <a href="#" class="category_li">ОБЗОР</a>
+                        <a href="#" class="category_li">ОБ</a>
+                        <a href="#" class="category_li">БЛОГ</a>
                     </div>
                     <div class="send_wants">
                         <i class="far fa-heart" id="heart">
@@ -126,7 +126,7 @@
                 </div>
 
                 <div class="productText">
-                    <p class="nameof_product">The Atelier Tailored Coat</p>
+                    <p class="nameof_product">Пальто Atelier Tailored</p>
 
                     <div class="rate_container">
                         <button class="star">
@@ -145,17 +145,17 @@
                             <i class="far fa-star"></i>
                         </button>
 
-                        <p class="rating">3 Review(s) | <span class="ratingSpan">ADD A REVIEW</span></p>
+                        <p class="rating">3 Review(s) | <span class="ratingSpan">ДОБАВИТЬ ОТЗЫВ</span></p>
                     </div>
 
                     <p class="price">29.99$</p>
 
                     <div class="product_model">
-                        <p class="product_info">Availability : <span class="info_vue " v-if="stock" :key="productVariant.variantId">In Stack {{stock}}</span></p>
-                        <p class="product_info">Availability : <span class="info_vue" v-else="" :key="productVariant.variantId">out of stack {{stock}}</span></p>
+                        <p class="product_info">Доступность : <span class="info_vue " v-if="stock" :key="productVariant.variantId">В наличии {{stock}}</span></p>
+                        <p class="product_info">Доступность : <span class="info_vue" v-else="" :key="productVariant.variantId">вне наличии {{stock}}</span></p>
                     </div>
 
-                    <p class="about_product">Sleek, polished, and boasting an impeccably modern fit, this blue, 2-but- ton Lazio suit features a notch lapel, flap pockets, and accompanying flat front trousers—all in pure wool by Vitale Barberis Canonico.</p>
+                    <p class="about_product">это одежда для младенцев, по которой малышам действительно удобно гулять</p>
 
                     <ul>
                         <li v-for="detail in details" style="list-style: inside square !important;">
@@ -165,13 +165,13 @@
 
                     <div class="product_select">
                         <div class="select">
-                            <p class="model_info">Color</p>
+                            <p class="model_info">Цвет</p>
                             <div class="pickColor" v-for="productVariants of productVariant" @click="updateImg(productVariants.imgvariantmain); updateImg2(productVariants.imgvariant1); updateImg3(productVariants.imgvariant2); updateImg4(productVariants.imgvariant3);">
                                 {{ productVariant.variantColor }}
                             </div>
                         </div>
                         <div class="select">
-                            <p class="model_info">Size</p>
+                            <p class="model_info">Размер</p>
                             <select class="product_input">
                                     <option>S</option>
                                     <option>M</option>
@@ -192,8 +192,8 @@
                     </div>
 
                     <div class="func">
-                        <button class="addCart" v-on:click="addToCart" :disabled="!stock" :class="{ disabled_button: !stock}">add to cart</button>
-                        <button class="addWish">💛 add to wishlist</button>
+                        <button class="addCart" v-on:click="addToCart" :disabled="!stock" :class="{ disabled_button: !stock}">добавить в корзину</button>
+                        <button class="addWish">💛 добавить в список желаний</button>
                     </div>
                 </div>
             </div>
@@ -201,21 +201,20 @@
 
 
         <div class="footer">
-            <p class="footer_text">Made with Love & Coffee © 2015 Design Lazy. All Rights Reserved.</p>
+            <p class="footer_text">Сделано с любовью и кофе © Design Lazy, 2015. Все права защищены.</p>
         </div>
     </div>
 
-
     <div id="CartAdd" onclick="this.style.display='none'">
         <span class="close1"><i class="fas fa-times" ></i></span>
-        <p>Hi dude, I'm blissful to u , for visited my website</p>
+        <p>Привет, чувак, я очень рад тебе за то, что ты посетил мой сайт</p>
     </div>
 
     <script>
         var myObject = new Vue({
             el: '#app',
             data: {
-                details: ["80% cotton", "20% polyester", "Gender-neutral"],
+                details: ["80% хлопок", "20% полиэстер", "Гендерно-нейтральный"],
                 card: 0,
                 stock: true,
                 imgin1: "https://cdn.crockid.ru/crockid/catalog/thumbs/0_9e47e409-9745-11eb-abe0-00155d006c00.jpg",
@@ -259,10 +258,9 @@
         })
     </script>
 
-
     <script src="./js/openingbox.js"></script>
     <script src=".//js/srcimage.js"></script>
-    <script src=".//js/wishes.js"></script>
+    <script src=".//js/wishesForRus.js"></script>
     <script src=".//js/inc.js"></script>
     <script src="./js/img.js"></script>
     <script src="./js/dropDownnav.js"></script>
